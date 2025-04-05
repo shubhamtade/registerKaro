@@ -7,7 +7,6 @@ import CallIcon from "@mui/icons-material/Call";
 import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
 import Theme from "./Theme";
 import { Tooltip } from "@mui/material";
-import classNames from "classnames";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -157,7 +156,7 @@ const Navbar = () => {
             <SupportAgentIcon className="h-5 w-5" />
             <span className="absolute bottom-0 left-2 flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-sky-500"></span>
             </span>
           </div>
         </a>
@@ -173,13 +172,9 @@ const Navbar = () => {
 
       {/* Mobile Drawer Menu */}
       <div
-        className={classNames(
-          "fixed inset-0 z-40 transform transition-transform duration-500 ease-in-out lg:hidden",
-          {
-            "translate-x-0": isMenuOpen,
-            "translate-x-full": !isMenuOpen,
-          }
-        )}
+        className={`fixed inset-0 z-40 transform ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-500 ease-in-out lg:hidden`}
       >
         {/* Overlay */}
         <div
@@ -188,7 +183,7 @@ const Navbar = () => {
         ></div>
 
         {/* Drawer Content */}
-        <div className="absolute right-0 top-0 h-screen w-2/3 md:w-4/5 md:max-w-sm bg-white shadow-xl flex flex-col">
+        <div className="absolute right-0 top-0 h-full w-full md:w-4/5 md:max-w-sm bg-white shadow-xl flex flex-col">
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-4 border-b">
             <h2 className="text-xl font-bold text-[#154761]">Menu</h2>
