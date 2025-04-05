@@ -188,7 +188,7 @@ const Navbar = () => {
         ></div>
 
         {/* Drawer Content */}
-        <div className="absolute right-0 top-0 h-full w-2/3 md:w-4/5 md:max-w-sm bg-white shadow-xl flex flex-col">
+        <div className="absolute right-0 top-0 h-screen w-2/3 md:w-4/5 md:max-w-sm bg-white shadow-xl flex flex-col">
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-4 border-b">
             <h2 className="text-xl font-bold text-[#154761]">Menu</h2>
