@@ -31,8 +31,8 @@ const App = () => {
       <Customers />
       <Blog />
       <ContactUs />
-      {/* <Footer /> */}
-      {/* <Test /> */}
+      <Footer />
+      <Test />
     </section>
   );
 };
