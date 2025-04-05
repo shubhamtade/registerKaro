@@ -173,57 +173,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-12 md:mb-0">
-              <img
-                src="/why-choose-us.webp"
-                alt="Why choose RegisterKaro"
-                className="rounded-lg shadow-xl w-full max-w-md mx-auto"
-              />
-            </div>
-            <div className="md:w-1/2 md:pl-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Why <span className="text-primary">Choose Us</span>
-              </h2>
-              <p className="text-gray-600 mb-8">
-                Our All-In-One Platform and team of experts will guide you
-                through every step and ensure your business starts the right way
-                in record time.
-              </p>
-
-              <div className="space-y-6">
-                {[
-                  "Affordable pricing with no hidden costs",
-                  "Compliance ensured by industry experts",
-                  "Simplified process with dedicated support",
-                  "On-time service with 99% success rate",
-                  "Instant response to all your queries",
-                ].map((item, index) => (
-                  <div key={index} className="flex items-start">
-                    <div className="flex-shrink-0 bg-primary rounded-full p-1 mt-1">
-                      <CheckIcon className="h-5 w-5 text-white" />
-                    </div>
-                    <div className="ml-3">
-                      <p className="text-gray-800 font-medium">{item}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <a
-                href="#"
-                className="mt-8 inline-flex items-center px-6 py-3 bg-primary text-white rounded-md hover:bg-primary-dark transition font-medium shadow-md"
-              >
-                Get Started Today
-                <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* How It Works Section */}
       <section className="py-16 bg-white">
