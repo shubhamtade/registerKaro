@@ -99,7 +99,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             />
-            <div className="absolute -bottom-10 md:-bottom-5 left-4 md:left-0 flex gap-4 md:gap-6">
+            <div className="absolute -bottom-10 md:-bottom-5 -left-2 md:left-0 flex gap-2 md:gap-6">
               <Counter
                 value={counters.businesses}
                 label="Businesses Incorporated"
