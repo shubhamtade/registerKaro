@@ -20,6 +20,15 @@ const App = () => {
         name="description"
         content="India's leading business compliance platform for company registration, tax filing, and legal services"
       />
+      <p className="bg-[#154761] text-gray-100 text-[10px] md:text-sm py-1 px-1 text-center">
+        We take care of ALL your business compliance needs{" "}
+        <span className="font-bold cursor-pointer ">
+          Register<span className="text-[#FFA22A]">Karo.</span>{" "}
+        </span>
+        <span className="">
+          We empower SMEs and entrepreneurs on their business journey.
+        </span>
+      </p>
 
       <Navbar />
       <Hero />
