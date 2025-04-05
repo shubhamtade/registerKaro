@@ -14,7 +14,7 @@ import Test from "./components/Test";
 
 const App = () => {
   return (
-    <section className="">
+    <section className="relative">
       <title>Home | RegisterKaro - Business Compliance Made Simple</title>
       <meta
         name="description"
@@ -29,6 +29,13 @@ const App = () => {
           We empower SMEs and entrepreneurs on their business journey.
         </span>
       </p>
+
+      <button
+        className="fixed bottom-[15%] -right-12 z-999 rotate-90 bg-red-500/80 hover:bg-red-500 text-gray-100 rounded-b-2xl p-2 animate-bounce  cursor-pointer duration-300"
+        onClick={() => alert("Thank You!!!")}
+      >
+        Request Call Back
+      </button>
 
       <Navbar />
       <Hero />
