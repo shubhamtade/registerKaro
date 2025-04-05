@@ -190,7 +190,7 @@ const Blog = () => {
                 onClick={() => setCurrentIndex(i * itemsPerSlide)}
                 className={`w-3 h-3 rounded-full ${
                   currentIndex === i * itemsPerSlide
-                    ? "bg-blue-600"
+                    ? "bg-[#FFA22A]"
                     : "bg-gray-400"
                 }`}
               />
