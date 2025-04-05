@@ -51,13 +51,14 @@ const Hero = () => {
 
   return (
     <section
-      className="relative bg-gradient-to-r from-blue-50 to-orange-50"
-      style={{
-        backgroundImage: `url(${BgImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+  className="relative bg-gradient-to-r from-blue-50 to-orange-50 overflow-hidden"
+  style={{
+    backgroundImage: `url(${BgImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+
       <div className="bg-white/70 backdrop-blur-sm">
         <div className="container mx-auto px-8 md:px-16 lg:px-24 py-14 md:py-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
           {/* Text Section */}
