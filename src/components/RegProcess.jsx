@@ -44,7 +44,7 @@ const RegProcess = () => {
             </h3>
 
             {/* Badge */}
-            <div className="absolute top-10 -right-2 bg-[#FFA22A] rounded-full h-14 w-14 md:h-16 md:w-16 flex items-center justify-center shadow-lg z-10">
+            <div className="absolute top-20 md:top-10 -right-2 bg-[#FFA22A] rounded-full h-14 w-14 md:h-16 md:w-16 flex items-center justify-center shadow-lg z-10">
               <span className="font-bold text-base md:text-lg text-white">
                 51k
               </span>
