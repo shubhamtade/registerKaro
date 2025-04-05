@@ -50,14 +50,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section
-      className="relative bg-gradient-to-r from-blue-50 to-orange-50 overflow-hidden"
-      style={{
-        backgroundImage: `url(${BgImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <section className="relative bg-gradient-to-r from-blue-100 to-orange-100 overflow-hidden">
       <div className="bg-white/70 backdrop-blur-sm">
         <div className="container mx-auto px-8 md:px-16 lg:px-24 py-14 md:py-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
           {/* Text Section */}
@@ -94,7 +87,7 @@ const Hero = () => {
             <motion.img
               src={HeroImg}
               alt="Business professionals"
-              className="w-full max-w-sm rounded-2xl shadow-2xl"
+              className="w-full max-w-sm rounded-2xl shadow-2xl border-1 border-gray-500/20"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}

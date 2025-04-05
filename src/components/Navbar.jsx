@@ -183,7 +183,7 @@ const Navbar = () => {
         ></div>
 
         {/* Drawer Content */}
-        <div className="absolute right-0 top-0 h-full w-full md:w-4/5 md:max-w-sm bg-white shadow-xl flex flex-col">
+        <div className="absolute right-0 top-0 h-full w-[70%] md:w-4/5 md:max-w-sm bg-white shadow-xl flex flex-col">
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-4 border-b">
             <h2 className="text-xl font-bold text-[#154761]">Menu</h2>
@@ -199,10 +199,10 @@ const Navbar = () => {
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
             <a
               href="#"
-              className="block text-gray-700 hover:text-[#FFA22A] font-medium py-2 transition-colors duration-200"
+              className="block  text-gray-700 hover:text-[#FFA22A] font-medium py-2 transition-colors duration-200"
               onClick={toggleMenu}
             >
-              Home
+              <span className="text-xl text-[#FFA22A] mr-1">|</span> Home
             </a>
 
             {/* Mobile Services Dropdown */}
@@ -213,7 +213,9 @@ const Navbar = () => {
                 aria-expanded={isServicesOpen}
                 aria-haspopup="true"
               >
-                <span>Services</span>
+                <span>
+                  <span className="text-xl text-[#FFA22A] mr-1">|</span>Services
+                </span>
                 <svg
                   className={`ml-1 h-4 w-4 transition-transform duration-200 ${
                     isServicesOpen ? "rotate-180" : ""
@@ -270,21 +272,21 @@ const Navbar = () => {
               className="block text-gray-700 hover:text-[#FFA22A] font-medium py-2 transition-colors duration-200"
               onClick={toggleMenu}
             >
-              Blog
+              <span className="text-xl text-[#FFA22A] mr-1">|</span>Blog
             </a>
             <a
               href="#"
               className="block text-gray-700 hover:text-[#FFA22A] font-medium py-2 transition-colors duration-200"
               onClick={toggleMenu}
             >
-              About Us
+              <span className="text-xl text-[#FFA22A] mr-1">|</span>About Us
             </a>
             <a
               href="#"
               className="block text-gray-700 hover:text-[#FFA22A] font-medium py-2 transition-colors duration-200"
               onClick={toggleMenu}
             >
-              Contact
+              <span className="text-xl text-[#FFA22A] mr-1">|</span>Contact
             </a>
           </div>
 
