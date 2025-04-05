@@ -10,6 +10,7 @@ import Customers from "./components/Customers";
 import Blog from "./components/Blog";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
+import Test from "./components/Test";
 
 const App = () => {
   return (
@@ -30,7 +31,8 @@ const App = () => {
       <Customers />
       <Blog />
       <ContactUs />
-      <Footer />
+      {/* <Footer /> */}
+      <Test />
     </section>
   );
 };

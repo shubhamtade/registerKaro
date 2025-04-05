@@ -4,7 +4,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import CallIcon from "@mui/icons-material/Call";
+import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
 import Theme from "./Theme";
+import { Tooltip } from "@mui/material";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -119,15 +121,27 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Contact/Theme */}
-      <div className="hidden justify-between items-center gap-5 lg:flex ">
+      <div className="hidden justify-between items-center gap-5 lg:flex">
         <Theme />
         <a
           href="tel:+918447746183"
-          class="flex items-center text-[14px] text-white bg-[#FFA22A] hover:bg-transparent hover:text-gray-700 border border-transparent hover:border-gray-700 px-4 py-2 rounded-3xl transition-colors duration-300 ease-in-out"
+          className="flex items-center text-gray-700"
+          aria-label="Call support"
         >
-          <CallIcon />
-          <span>+91 84477 46183</span>
+          <div className="relative flex items-center">
+            <SupportAgentIcon className="h-5 w-5" />
+            <span className="absolute bottom-0 left-2 flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-sky-500"></span>
+            </span>
+          </div>
         </a>
+        <Tooltip title="Login">
+          <a className="flex items-center text-[12px]   bg-[#FFA22A] hover:bg-transparent hover:text-[#FFA22A]  hover:border-gray-700 px-3 py-1 rounded-3xl transition-colors duration-300 ease-in-out cursor-pointer text-gray-100">
+            <ExitToAppOutlinedIcon className="w-3 h-3 mr-2" />
+            <span className="font-semibold">Login</span>
+          </a>
+        </Tooltip>
       </div>
 
       {/* Mobile Menu Button */}
@@ -138,13 +152,11 @@ const Navbar = () => {
           className="flex items-center text-gray-700"
           aria-label="Call support"
         >
-          {/* <SupportAgentIcon className="h-5 w-5" /> */}
-
           <div className="relative flex items-center">
             <SupportAgentIcon className="h-5 w-5" />
             <span className="absolute bottom-0 left-2 flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-sky-500"></span>
             </span>
           </div>
         </a>
