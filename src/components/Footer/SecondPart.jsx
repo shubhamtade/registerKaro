@@ -9,7 +9,7 @@ const SecondPart = () => {
           <h3 className="text-lg font-semibold text-[#FFA22A]">
             Elevate Your Business with RegisterKaro
           </h3>
-          <p className="text-gray-200">
+          <p className="text-gray-200 text-justify">
             As a leading technology-driven legal services and advisory firm, we
             empower SMEs and entrepreneurs on their business journey. Our expert
             team covers business registration, legal compliance, tax filing, IPR
@@ -25,7 +25,7 @@ const SecondPart = () => {
             <h3 className="text-lg font-semibold text-[#FFA22A]">
               Navigating Regulatory Affairs
             </h3>
-            <p className="text-gray-200">
+            <p className="text-gray-200 text-justify">
               In India, regulatory bodies like BIS, CDSCO, RBI, SEBI, and IRDAI
               hold the keys to licenses and registrations. We simplify this
               process by connecting you with our legal professionals who
@@ -38,7 +38,7 @@ const SecondPart = () => {
             <h3 className="text-lg font-semibold text-[#FFA22A]">
               Environmental Solutions
             </h3>
-            <p className="text-gray-200">
+            <p className="text-gray-200 text-justify">
               Our seasoned environmental experts provide comprehensive solutions
               for environmental compliance including battery waste management,
               plastic waste management, and e-waste management.
@@ -52,7 +52,7 @@ const SecondPart = () => {
             <h3 className="text-lg font-semibold text-[#FFA22A]">
               Business Registration Expertise
             </h3>
-            <p className="text-gray-200">
+            <p className="text-gray-200 text-justify">
               We facilitate all forms of business registration including private
               limited companies, one-person companies, Section 8 companies,
               LLPs, public companies, and Nidhi companies. Our services cover
@@ -64,7 +64,7 @@ const SecondPart = () => {
             <h3 className="text-lg font-semibold text-[#FFA22A]">
               Intellectual Property & Taxation
             </h3>
-            <p className="text-gray-200">
+            <p className="text-gray-200 text-justify">
               We specialize in IP protection (trademarks, copyrights, patents)
               and comprehensive tax solutions (GST, TDS, income tax filings).
               Our professionals ensure your tax matters are handled efficiently.
