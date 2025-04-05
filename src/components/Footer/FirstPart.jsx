@@ -3,8 +3,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import EmailIcon from "@mui/icons-material/Email";
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import Logo from "../../assets/logo.png";
 
 const FirstPart = () => {
@@ -80,20 +78,18 @@ const FirstPart = () => {
             #101, Oxford Towers, 139, HAL Old Airport Rd, Kodihalli, Bengaluru,
             Karnataka - 560008
           </p>
-          <p className="flex items-center gap-2">
-            <EmailIcon className="text-white/90"/>
+          <p>
             <a
               href="mailto:support@registerkaro.in"
-              className="hover:text-[#FFA22A] transition-colors"
+              className="text-white/90 hover:text-[#FFA22A] transition-colors"
             >
               support@registerkaro.in
             </a>
           </p>
-          <p className="flex items-center gap-1">
-            <LocalPhoneIcon className="text-white/90"/>
+          <p>
             <a
               href="tel:+918447746183"
-              className="hover:text-[#FFA22A] transition-colors"
+              className="text-white/90 hover:text-[#FFA22A] transition-colors"
             >
               +91 84477 46183
             </a>
