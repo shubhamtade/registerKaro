@@ -94,9 +94,6 @@ const Customers = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-white bg-opacity-90"></div>
-
       <div className="container mx-auto px-4 relative z-10">
         {/* Heading */}
         <div className="text-center mb-12">
