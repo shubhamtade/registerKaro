@@ -10,7 +10,6 @@ import Customers from "./components/Customers";
 import Blog from "./components/Blog";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
-import Test from "./components/Test";
 
 const App = () => {
   return (
@@ -34,7 +33,7 @@ const App = () => {
         className="fixed bottom-[15%] -right-12 z-999 rotate-90 bg-red-500/80 hover:bg-red-500 text-gray-100 rounded-b-2xl p-2 animate-bounce  cursor-pointer duration-300"
         onClick={() => alert("Thank You!!!")}
       >
-        Request Call Back
+        Request CallBack
       </button>
 
       <Navbar />
@@ -48,7 +47,6 @@ const App = () => {
       <Blog />
       <ContactUs />
       <Footer />
-      {/* <Test /> */}
     </section>
   );
 };

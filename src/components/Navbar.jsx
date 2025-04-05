@@ -137,7 +137,7 @@ const Navbar = () => {
           </div>
         </a>
         <Tooltip title="Login">
-          <a className="flex items-center text-[12px]   bg-[#FFA22A] hover:bg-transparent hover:text-[#FFA22A]  hover:border-gray-700 px-3 py-1 rounded-3xl transition-colors duration-300 ease-in-out cursor-pointer text-gray-100">
+          <a className="flex items-center text-[12px] border-1  bg-[#FFA22A] hover:bg-transparent hover:text-[#FFA22A]  hover:border-[#FFA22A] px-3 py-1 rounded-3xl transition-colors duration-300 ease-in-out cursor-pointer text-gray-100">
             <ExitToAppOutlinedIcon className="w-3 h-3 mr-2" />
             <span className="font-semibold">Login</span>
           </a>
