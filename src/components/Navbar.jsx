@@ -7,6 +7,7 @@ import CallIcon from "@mui/icons-material/Call";
 import ExitToAppOutlinedIcon from "@mui/icons-material/ExitToAppOutlined";
 import Theme from "./Theme";
 import { Tooltip } from "@mui/material";
+import classNames from "classnames";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -172,9 +173,13 @@ const Navbar = () => {
 
       {/* Mobile Drawer Menu */}
       <div
-        className={`fixed inset-0 z-40 transform ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-500 ease-in-out lg:hidden`}
+        className={classNames(
+          "fixed inset-0 z-40 transform transition-transform duration-500 ease-in-out lg:hidden",
+          {
+            "translate-x-0": isMenuOpen,
+            "translate-x-full": !isMenuOpen,
+          }
+        )}
       >
         {/* Overlay */}
         <div
