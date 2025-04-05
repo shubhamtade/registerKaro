@@ -67,30 +67,30 @@ const Navbar = () => {
 
           {isServicesOpen && (
             <div
-              className="absolute left-0 mt-2 w-64 bg-white dark:bg-gray-700 shadow-lg rounded-md py-2 z-10 animate-fadeIn"
+              className="absolute left-0 mt-2 w-64 bg-white dark:bg-gray-100 shadow-lg rounded-md py-2 z-10 animate-fadeIn"
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <a
                 href="#"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-200 transition-colors duration-200"
               >
                 Company Registration
               </a>
               <a
                 href="#"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-200 transition-colors duration-200"
               >
                 Compliance Services
               </a>
               <a
                 href="#"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-200 transition-colors duration-200"
               >
                 Tax & GST
               </a>
               <a
                 href="#"
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-200 transition-colors duration-200"
               >
                 Intellectual Property
               </a>
@@ -119,13 +119,13 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Contact/Theme */}
-      <div className="hidden justify-between items-center gap-5 lg:flex">
+      <div className="hidden justify-between items-center gap-5 lg:flex ">
         <Theme />
         <a
           href="tel:+918447746183"
-          className="flex items-center text-gray-700 hover:text-[#FFA22A] transition-colors duration-200"
+          class="flex items-center text-[14px] text-white bg-[#FFA22A] hover:bg-transparent hover:text-gray-700 border border-transparent hover:border-gray-700 px-4 py-2 rounded-3xl transition-colors duration-300 ease-in-out"
         >
-          <CallIcon className="h-5 w-5 mr-1" />
+          <CallIcon />
           <span>+91 84477 46183</span>
         </a>
       </div>
@@ -154,16 +154,16 @@ const Navbar = () => {
       <div
         className={`fixed inset-0 z-40 transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out lg:hidden`}
+        } transition-transform duration-500 ease-in-out lg:hidden`}
       >
         {/* Overlay */}
         <div
-          className="absolute inset-0  bg-opacity-10 backdrop-blur-sm"
+          className="absolute inset-0  backdrop-blur-sm"
           onClick={toggleMenu}
         ></div>
 
         {/* Drawer Content */}
-        <div className="absolute right-0 top-0 h-full w-4/5 max-w-sm bg-white shadow-xl flex flex-col">
+        <div className="absolute right-0 top-0 h-full w-full md:w-4/5 md:max-w-sm bg-white shadow-xl flex flex-col">
           {/* Drawer Header */}
           <div className="flex items-center justify-between p-4 border-b">
             <h2 className="text-xl font-bold text-[#154761]">Menu</h2>
